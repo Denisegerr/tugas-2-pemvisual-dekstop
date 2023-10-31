@@ -1,0 +1,155 @@
+object Form1: TForm1
+  Left = 256
+  Height = 320
+  Top = 145
+  Width = 385
+  Caption = 'Perhitungan Barang'
+  ClientHeight = 320
+  ClientWidth = 385
+  OnCreate = FormCreate
+  LCLVersion = '3.0.0.1'
+  object Label1: TLabel
+    Left = 57
+    Height = 15
+    Top = 14
+    Width = 171
+    Caption = 'Perhitungan Penjualan Barang'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Name = 'Times New Roman'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 24
+    Height = 15
+    Top = 48
+    Width = 67
+    Caption = 'Kode Barang'
+  end
+  object Label3: TLabel
+    Left = 24
+    Height = 15
+    Top = 80
+    Width = 46
+    Caption = 'Quantity'
+  end
+  object Label4: TLabel
+    Left = 24
+    Height = 15
+    Top = 112
+    Width = 72
+    Caption = 'Nama Barang'
+  end
+  object Label5: TLabel
+    Left = 24
+    Height = 15
+    Top = 144
+    Width = 71
+    Caption = 'Harga Satuan'
+  end
+  object Label6: TLabel
+    Left = 24
+    Height = 15
+    Top = 176
+    Width = 48
+    Caption = 'Sub Total'
+  end
+  object Label7: TLabel
+    Left = 24
+    Height = 15
+    Top = 208
+    Width = 36
+    Caption = 'Diskon'
+  end
+  object Label8: TLabel
+    Left = 24
+    Height = 15
+    Top = 240
+    Width = 57
+    Caption = 'Total Bayar'
+  end
+  object CBKode: TComboBox
+    Left = 136
+    Height = 23
+    Top = 40
+    Width = 101
+    ItemHeight = 15
+    Items.Strings = (
+      'A01'
+      'B02'
+      'C03'
+      'D04'
+    )
+    TabOrder = 0
+  end
+  object EQTY: TEdit
+    Left = 136
+    Height = 23
+    Top = 71
+    Width = 102
+    TabOrder = 1
+  end
+  object ENama: TEdit
+    Left = 136
+    Height = 23
+    Top = 104
+    Width = 102
+    TabOrder = 2
+  end
+  object EHarga: TEdit
+    Left = 136
+    Height = 23
+    Top = 136
+    Width = 102
+    TabOrder = 3
+  end
+  object ESubTotal: TEdit
+    Left = 136
+    Height = 23
+    Top = 168
+    Width = 102
+    TabOrder = 4
+  end
+  object EDiskon: TEdit
+    Left = 136
+    Height = 23
+    Top = 200
+    Width = 102
+    TabOrder = 5
+  end
+  object ETotal: TEdit
+    Left = 135
+    Height = 23
+    Top = 232
+    Width = 102
+    TabOrder = 6
+  end
+  object btnHItung: TButton
+    Left = 26
+    Height = 26
+    Top = 276
+    Width = 70
+    Caption = 'Hitung'
+    OnClick = btnHItungClick
+    TabOrder = 7
+  end
+  object btnUlang: TButton
+    Left = 144
+    Height = 26
+    Top = 276
+    Width = 70
+    Caption = 'Ulang'
+    TabOrder = 8
+  end
+  object btnKeluar: TButton
+    Left = 272
+    Height = 26
+    Top = 276
+    Width = 70
+    Caption = 'Keluar'
+    TabOrder = 9
+  end
+end
